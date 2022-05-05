@@ -12,8 +12,12 @@
 <script lang="ts">
 import Vue from 'vue'
 
+type DataType = {
+  msgs: any[]
+}
+
 export default Vue.extend({
-  data() {
+  data(): DataType {
     return {
       msgs: [],
     }
