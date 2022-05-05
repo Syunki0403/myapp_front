@@ -8,7 +8,7 @@ export default ({ $axios }) => {
     console.log(config)
   })
   // エラーログ
-  $axios.onError((config) => {
-    console.log(config)
+  $axios.onError((e) => {
+    console.log(e.response)
   })
 }
